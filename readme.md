@@ -32,9 +32,11 @@ Traditional semantic segmentation models (like a standard UNet) often produce bl
 * **Normalization:** Min-Max scaled to `[0, 1]` and resized to $256 \times 256$ tensors.
 
 ### 3. Master Loss Engineering (The Secret Sauce)
-To prevent the model from defaulting to empty masks, I engineered a hybrid master loss function. I introduced a custom **Weighted Binary Cross-Entropy (BCE) Loss** that applies a massive penalty multiplier whenever the AI misses a true-positive hemorrhage pixel:
+To prevent the model from defaulting to empty masks, I engineered a hybrid master loss function. I introduced a custom **Weighted Binary Cross-Entropy (BCE) Loss** that applies a massive penalty multiplier whenever the AI misses a true-positive hemorrhage pixel.
 
-$$w_i = \begin{cases} 30.0 & \text{if } y_i = 1.0 \\ 1.0 & \text{if } y_i = 0.0 \end{cases}$$
+The pixel weights ($w_i$) are assigned as follows:
+* **30.0** if it is a true hemorrhage pixel ($y_i = 1.0$)
+* **1.0** if it is background or healthy tissue ($y_i = 0.0$)
 
 The final Master Objective Function combining Adversarial, Pixel, and Structural overlap:
 
