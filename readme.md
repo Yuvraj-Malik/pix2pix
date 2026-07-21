@@ -13,8 +13,7 @@ This project tackles that bottleneck by framing medical segmentation as an **Ima
 ## 🖼️ Diagnostic Evaluation Dashboard
 *(The system generates a 4-column visual diagnostic map comparing the raw scan, ground truth, AI prediction, and an RGB error matrix.)*
 
-![Evaluation Dashboard Placeholder](docs/dashboard_screenshot.png) 
-> **Note:** Replace `docs/dashboard_screenshot.png` with the actual path to your 4-column output image.
+![Evaluation Dashboard Placeholder](Evaluate_pix2pix.png) 
 > * **🟩 Green:** True Positives (Correct identification)
 > * **🔴 Red:** False Positives (Conservative boundary extension)
 > * **🔵 Blue:** False Negatives (Missed bleed)
