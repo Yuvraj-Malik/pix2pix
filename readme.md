@@ -71,7 +71,8 @@ After 100 epochs of training on an NVIDIA CUDA environment, the model was frozen
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/Yuvraj-Malik/pix2pix
-
-   pip install torch torchvision matplotlib numpy
-
    cd pix2pix
+   pip install torch torchvision matplotlib numpy
+   py dataset.py
+   py train.py
+   py evaluate_gan.py
