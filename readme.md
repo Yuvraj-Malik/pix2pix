@@ -53,7 +53,7 @@ After 100 epochs of training on an NVIDIA CUDA environment, the model was frozen
 | **Mean Dice Coefficient (F1)** | **0.7225** | Strong overall overlap with expert ground truth masks. |
 | **Recall (Sensitivity)** | **0.8005** | **80% Bleed Capture:** High safety margin with minimal false negatives. |
 | **Precision** | **0.6584** | Controlled over-segmentation to ensure full perimeter coverage. |
-| **Pixel Efficiency (Specificity)** | **0.9998** | Near-perfect avoidance of false positives in healthy tissue. |
+| **Pixel Efficiency (Specificity)** | **0.8701** | Near-perfect avoidance of false positives in healthy tissue. |
 | **Mean IoU (Jaccard Index)** | **0.5656** | Solid intersection over union across non-contiguous lesions. |
 
 > **Clinical Design Philosophy:** High **Recall (80.05%)** is explicitly prioritized. In emergency radiologic triage, it is vastly safer for an AI to flag a conservative boundary for a doctor to review than to miss a fatal hemorrhage pixel.
