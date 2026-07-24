@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --page-bg: #f3f6fa;
-  --surface: #ffffff;
-  --surface-soft: #f8fafc;
-  --border: #d7e0ea;
-  --text-primary: #13253a;
-  --text-secondary: #4a5e75;
+  --page-bg: #e7edf3;
+  --surface: #eef3f8;
+  --surface-soft: #e5ecf4;
+  --border: #c7d3df;
+  --text-primary: #1a2b3f;
+  --text-secondary: #4d6279;
   --accent: #0b63b8;
   --accent-soft: #e6f0fb;
   --success: #0f8a5f;
@@ -28,7 +28,7 @@ body {
   font-family: var(--sans);
   color: var(--text-primary);
   background:
-    linear-gradient(180deg, rgba(230, 240, 251, 0.6), rgba(243, 246, 250, 1) 220px),
+    linear-gradient(180deg, rgba(214, 225, 238, 0.65), rgba(231, 237, 243, 1) 220px),
     var(--page-bg);
 }
 
@@ -66,12 +66,12 @@ body {
 
 .workflow-step.active {
   border-color: #91b7de;
-  background: #f5faff;
+  background: #eaf1f8;
 }
 
 .workflow-step.done {
   border-color: #9ecfb9;
-  background: #f4fbf7;
+  background: #edf5f0;
 }
 
 .workflow-index {
@@ -151,8 +151,8 @@ body {
   gap: 0.4rem;
   padding: 0.36rem 0.62rem;
   border-radius: 999px;
-  border: 1px solid #bfd1e5;
-  background: var(--surface-soft);
+  border: 1px solid #b7c7d8;
+  background: #e2e9f1;
   color: #24405d;
   font: 600 0.68rem/1.2 var(--mono);
 }
@@ -220,8 +220,8 @@ body {
 
 .status-tag {
   color: #385675;
-  background: #edf3f9;
-  border: 1px solid #d5e1ee;
+  background: #e2eaf3;
+  border: 1px solid #c8d5e3;
   border-radius: 999px;
   padding: 0.18rem 0.5rem;
   font: 600 0.64rem/1.2 var(--mono);
@@ -242,12 +242,12 @@ body {
 
 .upload-dropzone:hover {
   border-color: var(--accent);
-  background: #eef5fc;
+  background: #dee8f3;
 }
 
 .upload-dropzone.drag-over {
   border-color: #0b63b8;
-  background: #e7f1fc;
+  background: #d8e4f2;
 }
 
 .upload-dropzone:focus-visible {
@@ -357,13 +357,13 @@ body {
 
 .secondary-button {
   border: 1px solid #a7bfd8;
-  background: #f4f8fc;
+  background: #e7eef6;
   color: #1d4266;
 }
 
 .danger-button {
   border: 1px solid #dbb6ba;
-  background: #fff6f7;
+  background: #f5ebed;
   color: #8e2f38;
   display: inline-flex;
   align-items: center;
@@ -398,7 +398,7 @@ body {
   border: 1px solid #dce5ee;
   border-radius: 10px;
   padding: 0.58rem 0.62rem;
-  background: #fbfdff;
+  background: #eaf1f8;
 }
 
 .metric-label,
@@ -474,7 +474,7 @@ body {
   min-height: 490px;
   border: 1px dashed #c4d5e7;
   border-radius: 12px;
-  background: #f8fbfe;
+  background: #e8eff6;
   display: grid;
   place-content: center;
   text-align: center;
@@ -527,7 +527,7 @@ body {
 }
 
 .tile-placeholder {
-  background: #f7fbff;
+  background: #e6edf5;
   color: var(--text-secondary);
   display: grid;
   place-content: center;
